@@ -19,6 +19,16 @@ class Year {
         }
         return false;
     }
+    result(){
+        let res = "";
+        if(this.isLeap()){
+            res = "El año " + this.year + " es bisiesto";
+        }
+        else{
+            res = "El año " + this.year + " NO es bisiesto";
+        }
+        return res;
+    }
 }
 
 export default Year;
